@@ -1,9 +1,9 @@
 const mongoose = require("mongoose");
 
 //Auto Increment ID
-const autoIncrement = require("mogoose-sequence")(mongoose);
+const autoIncrement = require("mongoose-sequence")(mongoose);
 
-const noteSchema = new mongooseSchema(
+const noteSchema = new mongoose.Schema(
   {
     user: {
       type: mongoose.Schema.Types.ObjectId,

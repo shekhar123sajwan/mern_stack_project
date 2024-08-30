@@ -25,6 +25,8 @@ app.use(express.json());
 
 app.use("/", require("./routes/root"));
 
+app.use("/users", require("./routes/user"));
+
 app.all("*", (req, res) => {
   res.status(404);
   if (req.accepts("html")) {
